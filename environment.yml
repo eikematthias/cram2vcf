@@ -1,0 +1,18 @@
+# You can use this file to create a conda environment for this pipeline:
+#   conda env create -f environment.yml
+name: exome_check
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - bioconda::samtools
+  - bioconda::bcftools
+  - bioconda::plink
+  - bioconda::plink2
+  - bioconda::mosdepth
+  - conda-forge::r-base
+  - conda-forge::r-data.table
+  - conda-forge::r-tidyverse
+  - conda-forge::python
+  - conda-forge::gawk
